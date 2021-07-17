@@ -1,0 +1,227 @@
+/*.navbar-expand-lg .navbar-nav .nav-item {
+	border-bottom : 4px solid #ffffff;
+}
+.navbar-expand-lg .navbar-nav .nav-link:active{
+	padding: 2rem 1.2rem;
+	font-size: 1.4rem;
+	position: relative;
+}*/
+body{
+	min-height: 3000px;
+}
+.navbar{
+	background-image: url("img/35-thumb-Batik_Jogja_15 1.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.navbar .navbar-brand{
+	font-size: 36px;
+	font-family: satisfy;
+	color:#fff;
+}
+
+.gambar{
+	width: 100%;
+	height: 469px;
+	padding: 3rem 2rem;
+	background-image: url("img/Group 11.png"); 
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*background-position: right bottom,left top;,url("img/GAmbar.jpeg")*/
+	/*background-repeat: no-repeat,no-repeat;*/
+}
+/*.gambar2{
+	width: 100%;
+	height: 300px; 
+	padding: 2rem 1rem;
+	background-image: url("img/GAmbar.jpeg");
+	background-repeat: no-repeat;
+	background-position: left top; 
+	/*background-position: right bottom,left top;,url("img/GAmbar.jpeg")*/
+	/*background-repeat: no-repeat,no-repeat;
+}*/
+
+
+.jumbotron .display-3{
+	color:#fff;
+	text-align: right;
+}
+
+.jumbotron .lead{
+	text-align: right;
+	color:#fff;
+}
+.jumbotron .row{
+	text-align: right;
+	color:#fff;
+}
+
+.sejarah{
+	background-color: #B99850;
+	height: 230px;
+}
+.sejarah .text-center{
+	color:#fff;
+}
+.lokasi{
+	background-image: url("img/Rectangle 10.png"),url("img/pexels-rene-asmussen-1581384 1.png");
+	height: 300px;
+	background-repeat: no-repeat,no-repeat;
+	background-position: right bottom,left top;
+}
+
+.lokasi .display-4{
+	color:#fff;
+	text-align: right;
+}
+.lokasi .text-end{
+	color: #fff;
+}
+
+.open{
+	background-color: #602811;
+	height: 230px;
+}
+.open .display-4{
+	border-radius: .5rem;
+	justify-content: center;
+	color:#fff;
+	text-align: center;
+}
+.open .text-center{
+	object-fit: cover;
+}
+
+.sertifikat1{
+	width: 100%;
+	background-image: url("img/akharis-ahmad-JZ2QYos2YIg-unsplash 1.png");
+	height: 300px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.sertifikat1 .display-4{
+	color:#fff;
+	text-align: right;
+}
+.sertifikat1 .text-end{
+	color: #fff;
+}
+
+#menu1{
+	width: 100%;
+	background-image: url("img/Frame 4.png");
+	height: 1200px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#menu1 .card img{
+	position: relative;
+	width: 100%;
+	height: 300px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#contact1{
+	background-color: #B99850;
+	height: 200px;
+}
+
+#status1{
+	background-color: #602811;
+	height: 600px;
+}
+
+.contain {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+@media (min-width: 600px) {
+  .contain {
+    padding: 0;
+  }
+}
+
+h3,
+ul {
+  margin: 0;
+}
+
+h3 {
+  margin-bottom: 1rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: 3px solid gold;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  border: 1px solid #000;
+}
+
+
+.wrapper > * {
+  padding: 1em;
+}
+@media (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .wrapper > * {
+    padding: 2em 2em;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contacts {
+  background: transparent;
+  color: #fff;
+}
+
+.form {
+  background:transparent;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+form label {
+  display: block;
+}
+form p {
+  margin: 0;
+}
+
+.full-width {
+  grid-column: 1 / 3;
+}
+
+button,
+input,
+textarea {
+  padding: 1em;
+}
+
+button {
+  background: lightgrey;
+  width: 100%;
+  border: 0;
+}
+button:hover, button:focus {
+  background: gold;
+  outline: 0;
+}
