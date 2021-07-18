@@ -255,7 +255,7 @@
         </p>
         <p class="full-width">
           <label for="">Isi Pesan</label>
-          <textarea name="" id="" cols="30" rows="7" name="messege"></textarea>
+          <textarea id="" cols="30" rows="7" name="messege"></textarea>
         </p>
         <p class="full-width">
           <button type='submit'>Send</button>

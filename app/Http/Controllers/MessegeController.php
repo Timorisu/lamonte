@@ -40,7 +40,6 @@ class MessegeController extends Controller
             'email' => ['required','max:25'],
             'messege' => ['required'],
         ]);
-        var_dump($validatedData);die;
         $show = MessegeRec::create($validatedData);
         if($show){
             return redirect('/')->with('success', 'Message is successfully saved');

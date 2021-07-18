@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Data Blogs - SantriKoding.com</title>
+    <title>MailBox</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 </head>
@@ -14,33 +14,20 @@
             <div class="col-md-12">
                 <div class="card border-0 shadow rounded">
                     <div class="card-body">
-                        <!-- <a href="" class="btn btn-md btn-success mb-3">TAMBAH BLOG</a> -->
                         <table class="table table-bordered">
                             <thead>
                               <tr>
-                                <th scope="col">GAMBAR</th>
-                                <th scope="col">JUDUL</th>
-                                <th scope="col">CONTENT</th>
-                                <th scope="col">AKSI</th>
+                                <th scope="col">nama</th>
+                                <th scope="col">email</th>
+                                <th scope="col">pesan</th>
                               </tr>
                             </thead>
                             <tbody>
                               @forelse ($pesan as $mail)
                                 <tr>
-                                    <td class="text-center">
-
-                                    </td>
                                     <td>{{ $mail->nama }}</td>
                                     <td>{{ $mail->email }}</td>
                                     <td>{{ $mail->messege }}</td>
-                                    <!-- <td class="text-center"> -->
-                                        <!-- <form onsubmit="return confirm('Apakah Anda Yakin ?');" action="" method="POST"> -->
-                                            <!-- <a href="" class="btn btn-sm btn-primary">EDIT</a> -->
-                                            <!-- @csrf -->
-                                            <!-- @method('DELETE') -->
-                                            <!-- <button type="submit" class="btn btn-sm btn-danger">HAPUS</button> -->
-                                        <!-- </form> -->
-                                    <!-- </td> -->
                                 </tr>
                               @empty
                                   <div class="alert alert-danger">

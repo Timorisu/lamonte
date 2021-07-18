@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MessegeController;
+use App\Http\Controllers\AutAdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,5 +19,19 @@ Route::get('/', function () {
     return view('index');
 });
 //Route::get('Messege', [MessageController::class, 'index']);
-Route::get('/admin', [MessegeController::class, 'index'])->name('admin.index');
 Route::post('/store', [MessegeController::class, 'store'])->name('store');
+
+
+Route::get('/new-login', function () {
+    return view('newLogin');
+});
+
+
+Route::post('/login', [AutAdminController::class, 'login'])->name('login');
+Route::get('logout',  [AutAdminController::class, 'logout'])->name('logout');
+Route::get('/admin', [MessegeController::class, 'index'])->name('admin.index');
+
+// Route::group(['middleware' => 'auth'], function () {
+//     
+//     
+// });
