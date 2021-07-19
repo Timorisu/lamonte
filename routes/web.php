@@ -17,21 +17,16 @@ use App\Http\Controllers\AutAdminController;
 
 Route::get('/', function () {
     return view('index');
-});
+})-> name('home');
 //Route::get('Messege', [MessageController::class, 'index']);
 Route::post('/store', [MessegeController::class, 'store'])->name('store');
 
 
-Route::get('/new-login', function () {
+Route::get('/login', function () {
     return view('newLogin');
-});
-
+})->name('new-login');
 
 Route::post('/login', [AutAdminController::class, 'login'])->name('login');
-Route::get('logout',  [AutAdminController::class, 'logout'])->name('logout');
-Route::get('/admin', [MessegeController::class, 'index'])->name('admin.index');
+Route::get('/logout', [AutAdminController::class, 'logout'])->name('logout');
 
-// Route::group(['middleware' => 'auth'], function () {
-//     
-//     
-// });
+Route::get('/admin', [MessegeController::class, 'index'])->name('admin.index')->middleware(['auth']);

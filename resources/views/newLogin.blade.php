@@ -17,7 +17,7 @@
       <div class="login__body">
 
         <div class="form__field">
-          <input type="text" placeholder="Username" name="username" required>
+          <input type="text" placeholder="Username" name="name" required>
         </div>
 
         <div class="form__field">
@@ -33,6 +33,18 @@
     </form>
 
   </div>
+  <script>
+        //message with toastr
+        @if(session()->has('success'))
+        
+            toastr.success('{{ session('success') }}', 'BERHASIL!'); 
+
+        @elseif(session()->has('error'))
+            alert('{{ session('error') }}')
+            toastr.error('{{ session('error') }}', 'GAGAL!'); 
+            
+        @endif
+    </script>
 
 </body>
 </html>
